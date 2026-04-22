@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import SplashScreen from "./components/SplashScreen";
 import Nav from "./components/Nav";
