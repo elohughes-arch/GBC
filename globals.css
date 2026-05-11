@@ -22,7 +22,6 @@ body {
 @layer base {
   h1, h2, h3, h4, h5, h6 {
     @apply font-bold uppercase tracking-tight;
-    /* Barlow Condensed added as the primary web-safe alternative to DIN */
     font-family: 'Barlow Condensed', 'DIN Condensed', 'Arial Narrow', sans-serif;
   }
 }
@@ -32,32 +31,13 @@ body {
 ::-webkit-scrollbar-track { background: #111; }
 ::-webkit-scrollbar-thumb { background: #14b8a6; border-radius: 10px; }
 
-/* Animations */
+/* Custom Animations */
 @keyframes fade-in-up {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
 .animate-fade-in-up { animation: fade-in-up 0.8s ease-out forwards; }
-
-@keyframes fade-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-.animate-fade-in { animation: fade-in 1s ease-out forwards; }
-
-@keyframes slide-up {
-  from { opacity: 0; transform: translateY(40px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.animate-slide-up { animation: slide-up 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; }
-
-.animate-slide-up-delayed {
-  animation: slide-up 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0.2s forwards;
-  opacity: 0;
-}
 
 .glass {
   @apply bg-white/5 backdrop-blur-xl border border-white/10;
