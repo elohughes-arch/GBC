@@ -1,14 +1,15 @@
 "use client";
-import SplashScreen from "./components/SplashScreen";
-import Nav from "./components/Nav";
-import Hero from "./components/Hero";
-import TrustStats from "./components/TrustStats";
-import ServiceGrid from "./components/ServiceGrid";
-import PhotoGrid from "./components/PhotoGrid";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import { siteData } from "./data/siteData";
+// Use "../" to go up one level from the 'app' folder to the 'components' folder
+import SplashScreen from "../components/SplashScreen";
+import Nav from "../components/Nav";
+import Hero from "../components/Hero";
+import TrustStats from "../components/TrustStats";
+import ServiceGrid from "../components/ServiceGrid";
+import PhotoGrid from "../components/PhotoGrid";
+import About from "../components/About";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
+import { siteData } from "../data/siteData";
 
 export default function Home() {
   return (
